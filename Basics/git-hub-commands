@@ -1,0 +1,134 @@
+GIT AND GITHUB
+
+GIT : 
+	GIT is a Source Control Management or Version Control System. It is more useful for tracking our code. For tracking we need to store our code that place is called Repository.
+
+Version Control System is shortly named as VCS. There are two categories in VCS.
+i) CVCS => Centralised Version Controlling System
+ii) DVCS  => Distributed Version Controlling System
+
+GIT is working under the DVCS i.e. Distributed Version Controlling System.
+
+   
+
+DVCS is not internet depency, 
+
+Working copy means developer pc or laptop, above repository is also developer pc or laptop.
+
+No need to install GIT in Ubuntu, It is already install in Ubuntu OS.
+
+
+To switch the user sudo su -root 
+apt install git
+git –version  => for check the git is install or not
+
+For GIT, local repository is needed because GIT is DVCS. For create a local repository
+git init
+before create local repository(i.e. git initialization) create a folder and do all the activiry inside one.
+
+After git initialzation, see the git file. GIT file is kind of a hide file, so use 
+ls -a => this command shows the .git folder
+
+vi test => create a text file and type one line
+
+git status -s =>  gives output as ‘??’ means it is a untracked file
+
+
+
+  
+
+git add test => test is a filename, it will add the test file in GIT
+git status -s => Now the ‘??’ is replaced as ‘A’ means Added. In this command ‘-s’ means short
+Now the file was in moved form Working directory to Staging Area.
+
+Now going to move the file from Staging area to local repo
+git commit -m “First commit”  => -m means message, we must give the message for every commit
+
+The above command will commit successfully but the username was not configured, so it take the rootname and ip address.
+
+
+  
+
+The above cmd are used for configure the user
+
+git config  --global user.name “Rahul”
+git config  --global user.email “venkat.rahul@gmail.com”
+
+--global is use the name and email to all commit with the PC, if the --global was removed then name and email was work in the particular folder.
+
+git log  => was used to see the commit as log.
+
+git show <commit_id>  => this show the data inside the git. Commit id was copied from git log
+
+Now, I’m gone a change the test file by adding another line
+
+vi test
+
+after add the line in test file
+
+git status -s => give output like Modified ‘M’ in red color
+
+git add test
+
+git status -s => give output as ‘M in Green color, the color was change from red to green, because we add the test file in staging area
+
+git commit -m  “second commit” => this will commit the test file in local repository
+git log --oneline  => this will give the log in simple way that is one line
+
+whenever we do the first commit then the master branch will automatically created
+
+git branch =>display the branches
+
+HEAD is the last commit of branch
+
+Once add the file in git local repository, there is no need to add again if any changes are occured
+
+git commit -am “Third Commit” => not able to give for untracked file. ie.need to add in first after able to use this cmd
+
+
+
+git branch dev => create a new branch ‘dev’
+
+git branch => list all the branches
+Now I’m at master branch, need to go to dev branch
+
+
+git checkout dev => Now I’m at dev branch
+
+
+create one repository in GITHUB and copy the id of the repository
+
+git remote add alias id
+
+git push alias branch_name
+
+
+Check Git version => git --version
+
+Initialize a new Git repository => git init
+
+Check repository status => git status -s
+
+Add files to staging area => git add <filename>
+
+Commit changes to local repository => git commit -m "Your commit message"
+
+Configure user information => git config --global user.name "Your Name" and git config --global user.email "your.email@example.com"
+
+View commit history => git log and git log --oneline
+
+Show details of a specific commit => git show <commit_id>
+
+Create a new branch => git branch <branch_name>
+
+List all branches => git branch
+
+Switch to a different branch => git checkout <branch_name>
+
+Delete a branch => git branch -d <branch_name>
+
+Merge changes from one branch to another => git merge <branch_name>
+
+Commit all changes (including modified and tracked files) => git commit -am "Your commit message"
+
+
