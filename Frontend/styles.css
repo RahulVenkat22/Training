@@ -1,0 +1,75 @@
+.outer{
+    background-color: rgb(247, 190, 239);
+    background-size: cover;
+    height: 182vh;
+    
+}
+
+.bg{
+    background-color: #ffffff;
+    border-radius: 5px;
+    height: 180vh;
+}
+
+.second-heading{
+    font-weight: bold;
+}
+
+.star{
+    color:red;
+}
+
+.common-heading{
+    font-weight: bold;
+}
+
+.secondary-heading{
+    font-weight: 200;
+}
+
+.margin-box{
+    width: 95%;
+}
+
+
+.height-box{
+    height: 150px;
+}
+
+
+
+.button{
+    background-color: rgba(25, 0, 255, 0.623);
+    border-width: 0px;
+    color: #ffffff;
+    height: 50px;
+    width: 200px;
+    border-radius: 4px;
+}
+
+.select-tab{
+    width: 90% !important;
+}
+table {
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black; 
+}
+
+th {
+    background-color: rgb(5, 243, 203);
+}
+
+.table-box2 {
+    width: 45%;
+}
+
+.bg-table {
+    background-color: rgb(5, 243, 203);
+}
