@@ -1,0 +1,36 @@
+.outer{
+    background-color: antiquewhite;
+    height: 200vh;
+    background-size: cover;
+}
+
+.bg{
+    background-color: white;
+    height: 195vh;
+    background-color: cover;
+}
+
+.star{
+    color: red;
+}
+
+
+.input-box{
+    height: 45px;
+}
+
+.input-big-box{
+    height: 150px;
+}
+
+.table-header{
+    background-color: aquamarine;
+}
+
+.button{
+    background-color: #17202a;
+    height: 45px;
+    width: 180px;
+    border-radius: 3px;
+    border-width: 0px;
+}
