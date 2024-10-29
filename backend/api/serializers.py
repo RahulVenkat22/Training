@@ -1,7 +1,19 @@
-from rest_framework.serializers import ModelSerializer
-from .models import Student
+from rest_framework import serializers
+from .models import Student, Exams, ExamScore
 
-class StudentSerializer(ModelSerializer):
+class ExamsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Exams
+        fields = "__all__"
+
+class ExamScoreSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ExamScore
+        fields = "__all__"
+
+class StudentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Student
         fields = "__all__"
+
+    
